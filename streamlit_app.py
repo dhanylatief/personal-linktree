@@ -34,7 +34,7 @@ def main():
         """
         <div class="link-box"; style="text-align: center; color: black;">
             <h1>My Links</h1>
-            <p>Welcome to my Linktree! Here are some my social links:</p>
+            <p>I am Muhammad Dhany Latief and welcome to my Linktree! Here are some my social links:</p>
         </div>
         """,
         unsafe_allow_html=True

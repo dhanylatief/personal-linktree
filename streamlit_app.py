@@ -1,5 +1,12 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="Muhammad Dhany Latief's Linktree",
+    page_icon=":link:",
+    layout="centered",
+    initial_sidebar_state="auto"
+)
+
 def main():
     st.markdown(
         """
@@ -25,6 +32,13 @@ def main():
         .link-box a:hover {
             color: #0073e6;
         }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px auto;
+        }
         </style>
         """,
         unsafe_allow_html=True
@@ -33,6 +47,7 @@ def main():
     st.markdown(
         """
         <div class="link-box"; style="text-align: center; color: black;">
+            <img src="https://i.imgur.com/J7Thmac.jpeg" alt="Profile Picture" class="profile-pic">
             <h1>My Links</h1>
             <p>I am Muhammad Dhany Latief and welcome to my Linktree! Here are some my social links:</p>
         </div>

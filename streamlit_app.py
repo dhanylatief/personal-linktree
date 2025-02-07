@@ -49,6 +49,7 @@ def main():
 
     links = {
         "Gmail": ("mailto:m.dhany.latief@gmail.com", "fas fa-envelope"),
+        "Instagram": ("https://www.instagram.com/dhanylatief/", "fab fa-instagram"),
         "LinkedIn": ("https://www.linkedin.com/in/dhany-latief-22a674241/", "fab fa-linkedin"),
         "GitHub": ("https://github.com/dhanylatief", "fab fa-github"),
         "Medium": ("https://medium.com/@m.dhany.latief", "fab fa-medium"),

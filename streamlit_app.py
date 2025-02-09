@@ -8,6 +8,15 @@ st.set_page_config(
 )
 
 def main():
+    st.sidebar.title("Navigation")
+    page = st.sidebar.radio("Go to", ["Home", "My Projects"])
+
+    if page == "Home":
+        show_home()
+    elif page == "My Projects":
+        show_projects()
+
+def show_home():
     st.markdown(
         """
         <style>
@@ -63,17 +72,25 @@ def main():
     )
 
     links = {
-        "Gmail": ("mailto:m.dhany.latief@gmail.com", "fas fa-envelope"),
-        "Instagram": ("https://www.instagram.com/dhanylatief/", "fab fa-instagram"),
-        "Facebook": ("https://www.facebook.com/muhammad.d.latief.9", "fab fa-facebook"),
         "LinkedIn": ("https://www.linkedin.com/in/dhany-latief-22a674241/", "fab fa-linkedin"),
         "GitHub": ("https://github.com/dhanylatief", "fab fa-github"),
+        "Gmail": ("mailto:m.dhany.latief@gmail.com", "fas fa-envelope"),
+        "Instagram": ("https://www.instagram.com/dhanylatief/", "fab fa-instagram"),
         "Medium": ("https://medium.com/@m.dhany.latief", "fab fa-medium"),
-        "Tableau Public": ("https://public.tableau.com/app/profile/dhan.l/vizzes", "fas fa-chart-bar")
+        "Tableau Public": ("https://public.tableau.com/app/profile/dhan.l/vizzes", "fas fa-chart-bar"),
+        "Facebook": ("https://www.facebook.com/muhammad.d.latief.9", "fab fa-facebook")
     }
 
     for name, (url, icon) in links.items():
         st.markdown('<div class="link-box">'f'<a href="{url}" target="_blank"><i class="{icon}"></i> {name}</a>''</dif>', unsafe_allow_html=True)
-    
+
+def show_projects():
+    st.title("My Projects")
+    st.markdown(
+        """
+        Coming soon...
+        """
+    )
+
 if __name__ == "__main__":
     main()

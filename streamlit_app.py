@@ -8,9 +8,8 @@ st.set_page_config(
 )
 
 def main():
-    st.sidebar.title("Navigation")
-    page = st.sidebar.radio("Go to", ["Home", "My Projects"])
-
+    st.sidebar.title("Muhammad Dhany Latief's Linktree")
+    page = st.sidebar.radio("Pages:", ["Home", "My Projects"])
     if page == "Home":
         show_home()
     elif page == "My Projects":
@@ -85,11 +84,49 @@ def show_home():
         st.markdown('<div class="link-box">'f'<a href="{url}" target="_blank"><i class="{icon}"></i> {name}</a>''</dif>', unsafe_allow_html=True)
 
 def show_projects():
-    st.title("My Projects")
     st.markdown(
         """
-        Coming soon...
+        <style>
+        .stApp {
+            background-image: url("https://cdn.pixabay.com/photo/2020/04/30/17/52/network-5113928_960_720.jpg");
+            background-size: cover;
+        }
+        .link-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+        .link-box a {
+            display: block;
+            margin: 10px 0;
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+        .link-box a:hover {
+            color: #0073e6;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px auto;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )    
+    st.markdown(
         """
+        <div class="link-box"; style="text-align: center; color: black;">
+            <h1>My Projects</h1>
+            <p>Coming soon...</p>
+        </div>
+        """,
+        unsafe_allow_html=True
     )
 
 if __name__ == "__main__":

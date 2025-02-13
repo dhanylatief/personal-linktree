@@ -71,6 +71,7 @@ def show_home():
     )
 
     links = {
+        "Curriculum Vitae": ("https://drive.google.com/file/d/175WkMk7AazrDySacnWCS0waW0qThzXSu/view?usp=sharing", "fas fa-file-pdf"),
         "LinkedIn": ("https://www.linkedin.com/in/dhany-latief-22a674241/", "fab fa-linkedin"),
         "GitHub": ("https://github.com/dhanylatief", "fab fa-github"),
         "Gmail": ("mailto:m.dhany.latief@gmail.com", "fas fa-envelope"),
